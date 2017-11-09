@@ -4,7 +4,8 @@ This repo is for work by @BenjaminHCCarr and any collaborators for work on the t
 
 ---
 
-Docker iamges:
+Docker images:
+
 `Arvados`: https://hub.docker.com/u/bioconductor/
 `arvados/arvbox-demo`: https://hub.docker.com/r/arvados/arvbox-demo/
 `Bioconductor`: https://hub.docker.com/u/bioconductor/
@@ -19,6 +20,7 @@ Useful Bioconductor links
 - https://www.bioconductor.org/
 - https://www.bioconductor.org/install/
 - https://www.bioconductor.org/help/workflows/
+
 
 ---
 
