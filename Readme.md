@@ -14,7 +14,7 @@ As a first step, the R SDK should allow me to allow to find collections and file
 
 As an optional second stage, it'd be useful to be able to submit CWL jobs and monitor their progress.
 
-The SDK should work on Windows, OS X, and Linux, which implies that depending on arv-mount for file reading and writing is not an acceptable option. Instead, we will use the webdav support in keep-web. Read-only support is already available (completed in issue #12216). Write support is forthcoming, see issue #12483.
+The SDK should work on Windows, OS X, and Linux, which implies that depending on arv-mount for file reading and writing is not an acceptable option. Instead, we will use the webdav support in keep-web. Read-only support is already available (completed in issue [#12216](https://dev.arvados.org/issues/12216)). Write support is forthcoming, see issue [#12483](https://dev.arvados.org/issues/12483).
 
 A potential supporting component might be googleAuthR http://code.markedmondson.me/googleAuthR/ which could be used in a similar way to googleComputeEngineR https://cloudyr.github.io/googleComputeEngineR/ and other packages which are layered on it. googleAuthR can be used for API generation and response parsing, but needs to be reworked to not assume Google authentication or endpoints. Instead of the OAuth2 dance, it needs to be able to use an API token.
 
@@ -41,9 +41,9 @@ source('arvados_objects.R')
 gar_create_package(api_description, '/tmp/aRv', rstudio = TRUE, check = TRUE, github = FALSE)
 ```
 
-There gar_create_package call does the whole thing including man pages, README, etc, but the gar_create_api_objects and gar_create_api_skeleton, can be used to just do a part of the process.
+There `gar_create_package` call does the whole thing including man pages, README, etc, but the `gar_create_api_objects` and `gar_create_api_skeleton`, can be used to just do a part of the process.
 
-The generator assumes the context of a Google API, so has a bunch of built-in assumptions that need to be cleaned up. Below is a non-exaustive list:
+The generator assumes the context of a Google API, so has a bunch of built-in assumptions that need to be cleaned up. Below is a non-exhaustive list:
 - authentication - switch from Google auth to Arvados token based authentication, remove/fix all references to googleAuthR::gar_auth() and Google API scopes
 - fixed base URL - in the above example qr1hi.arvadosapi.com is hardwired into the API. This needs to be configurable by the caller.
 man page generation - there's a bunch of warnings due formatting in the docs
@@ -67,7 +67,7 @@ There are also additional things which need to be added:
 Some hints on testing and other advanced API topics are here:
 - http://code.markedmondson.me/googleAuthR/articles/advanced-building.html
 
-There are two relevant packages, SevenBridges "sevenbridges" and Illumina's "BaseSpaceR", which could be used to compare against or as sources for code (they are both Apache licensed).
+There are two relevant packages, SevenBridges "`sevenbridges`" and Illumina's "`BaseSpaceR`", which could be used to compare against or as sources for code (they are both Apache licensed).
 
 - http://bioconductor.org/packages/release/bioc/html/sevenbridges.html
 - https://github.com/sbg/sevenbridges-r
