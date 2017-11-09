@@ -7,9 +7,13 @@ This repo is for work by @BenjaminHCCarr and any collaborators for work on the t
 Docker images:
 
 `Arvados`: https://hub.docker.com/u/bioconductor/
+
 `arvados/arvbox-demo`: https://hub.docker.com/r/arvados/arvbox-demo/
+
 `Bioconductor`: https://hub.docker.com/u/bioconductor/
+
 `bioconductor/release_base`: https://hub.docker.com/r/bioconductor/release_base/
+
 
 Useful Arvados links
 - https://dev.arvados.org/projects/arvados/wiki
