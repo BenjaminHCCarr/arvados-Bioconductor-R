@@ -4,6 +4,14 @@ This repo is for work by @BenjaminHCCarr and any collaborators for work on the t
 
 ---
 
+Useful links:
+- https://dev.arvados.org/projects/arvados/wiki
+- http://doc.arvados.org/sdk/index.html
+- http://doc.arvados.org/sdk/python/sdk-python.html
+
+---
+
+# Issue 11876 is replicated below
 ## Description
 
 Overview:
